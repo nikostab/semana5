@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_mascotasLogo"
+                    android:layout_width="@dimen/app_icon"
+                    android:layout_height="@dimen/app_icon"
+                    android:src="@drawable/ic_pawprint"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/tv_appName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/app_name"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_mascotasFavoritas"
+                    android:layout_width="@dimen/favorite_icon"
+                    android:layout_height="@dimen/favorite_icon"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_star"
+                    android:contentDescription="@string/fav" />
+
+                <TextView
+                    android:id="@+id/tv_mascotasFavoritas"
+                    android:layout_width="@dimen/favorite_icon"
+                    android:layout_height="@dimen/favorite_icon"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/favoritos"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_camera" />
+
+    <include layout="@layout/content_main" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

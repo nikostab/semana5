@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="335dp"
+    android:layout_margin="25dp"
+    android:layout_gravity="center_horizontal"
+    android:padding="3dp"
+    android:elevation="4dp"
+    cardView:cardCornerRadius="2dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_mascotaImageContainer"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_mascotaImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_image"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_mascotaInfoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/ll_mascotaImageContainer">
+
+            <ImageView
+                android:id="@+id/iv_mascotaLikeBtn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="3dp"
+                android:src="@drawable/ic_bone"
+                android:contentDescription="@string/mascota_me_gusta" />
+
+            <TextView
+                android:id="@+id/tv_mascotaName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@id/iv_mascotaLikeBtn"
+                android:text="@string/mascota_name"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/iv_mascotaLikesIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_filled_bone"
+                />
+
+            <TextView
+                android:id="@+id/tv_mascotaLikesScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/iv_mascotaLikesIcon"
+                android:layout_marginEnd="5dp"
+                android:text="@string/likes_score"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
