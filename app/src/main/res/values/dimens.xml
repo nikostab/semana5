@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_icon">50dp</dimen>
+    <dimen name="favorite_icon">50dp</dimen>
+    <dimen name="top_tv_proyecto">80dp</dimen>
+    <dimen name="top_about">5dp</dimen>
+    <dimen name="margin_contacto">15dp</dimen>
+    <dimen name="contacto_content_top">50dp</dimen>
+</resources>

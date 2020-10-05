@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mascotas</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="likes_score">0</string>
+    <string name="mascota_name">Nombre de la mascota</string>
+    <string name="mascota_me_gusta">Me gusta</string>
+    <string name="favoritos">5</string>
+    <string name="fav">Favoritos</string>
+    <string name="tv_proyecto_mascotas">Proyecto Mascotas</string>
+    <string name="tv_version">Versión 4.0</string>
+    <string name="tv_curso">Desarrollo de aplicaciones con Android</string>
+    <string name="tv_desarrollador">Desarollado por: Marvin Cerdas</string>
+    <string name="contacto_h_nombre">Nombre</string>
+    <string name="contacto_h_correo">Correo electrónico</string>
+    <string name="contacto_h_mensaje">Mensaje</string>
+    <string name="contacto_h_enviar">Enviar</string>
+    <string name="contacto_mensaje_enviado">Se ha enviado el mensaje</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
